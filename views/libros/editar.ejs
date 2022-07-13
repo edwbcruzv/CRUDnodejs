@@ -1,0 +1,20 @@
+<%- include ../layouts/cabecera.ejs %>
+<form action="../actualizar" method="post" enctype="multipart/form-data" >
+
+    <input type="text" name="id" value="<%= libro.id %> ">
+
+    <div class="mb-3">
+      <label for="" class="form-label">Nombre</label>
+      <input type="text" name="nombre" class="form-control" value="<%= libro.nombre %> ">
+    </div>
+
+    <div class="mb-3">
+      <label for="" class="form-label">Imagen </label>
+      <img src="/Images/<%=libro.imagen%>" class="img-thumbnail" alt="<%=libro.imagen%>" width="100">
+      <input type="file" class="form-control" name="archivo" >
+    </div>
+
+    <button type="submit" class="btn btn-secondary">Guardar</button>
+
+</form>
+<%- include ../layouts/pie.ejs %>

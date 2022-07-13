@@ -1,20 +1,19 @@
 <%- include ../layouts/cabecera.ejs %>
-<form action="#" method="post">
+<form action="/libros" method="post" enctype="multipart/form-data" >
 
     <div class="mb-3">
       <label for="" class="form-label">Nombre</label>
       <input type="text" name="nombre" class="form-control" >
-      <small id="helpId" class="text-muted">Help text</small>
     </div>
 
     <div class="mb-3">
       <label for="" class="form-label">Imagen</label>
       <input type="file" class="form-control" name="archivo" >
-      <small id="fileHelpId" class="form-text text-muted">Help text</small>
     </div>
 
     <button type="submit" class="btn btn-secondary">Guardar</button>
 
+    
 
 </form>
 <%- include ../layouts/pie.ejs %>

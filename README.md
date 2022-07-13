@@ -22,6 +22,8 @@ ahora se deben instalar las dependencias que necesita el proyecto
 nodemon como dependencia de desarrollo para no estar reiniciando el servidor de desarrollo
 > npm install --save-dev nodemon
 
+>npm install multer --save
+
 ### Base de datos Mysql
 
 >npm install mysql

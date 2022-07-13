@@ -14,7 +14,7 @@ con.connect(
         if(!err){
             console.log("Conectado a la base mysql")
         }else{
-            console.log("Error al concetarse a mysql")
+            console.log("Error al conectarse a mysql")
         }
     }
 )

@@ -23,9 +23,22 @@
                         <td><%=libro+1%></td>
                         <td><%=libros[libro].id%></td>
                         <td><%=libros[libro].nombre%></td>
-                        <td><%=libros[libro].imagen%></td>
+                        <td>
+                            <img src="Images/<%=libros[libro].imagen%>" class="img-thumbnail" alt="" width="100">
+                        </td>
                         
-                        <td>editar borrar</td>
+                        <td>
+                            <div class="btn-group-vertical" role="group" aria-label="">
+                                <form class="d-flex" method="get" action="/libros/editar/<%=libros[libro].id%>">
+                                     <button type="submit" class="btn btn-secondary">Editar</button>
+                                </form>
+                             </div>
+                            <div class="btn-group-vertical" role="group" aria-label="">
+                               <form class="d-flex" method="post" action="/libros/eliminar/<%=libros[libro].id%>">
+                                    <button type="submit" class="btn btn-danger">Borrar</button>
+                               </form>
+                            </div>
+                        </td>
                     </tr>
 
                     <% } %>
